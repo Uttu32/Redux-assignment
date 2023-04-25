@@ -1,14 +1,15 @@
 import React from "react";
+import "./Button.css"
 
-const Button = ({ value, dispatch, increaseBtnCount, name }) => {
+const Button = ({ dispatch, increaseBtnCount, name }) => {
   return (
-    <div>
+    <div className="btn">
       <button
         onClick={() => {
           dispatch(increaseBtnCount({ name: name }));
         }}
       >
-        {value}
+        {name}
       </button>
     </div>
   );

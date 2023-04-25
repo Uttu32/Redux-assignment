@@ -4,5 +4,5 @@ import { increaseButtonCount } from "./todoReducer";
 export const store = configureStore({
   reducer: {
     increase: increaseButtonCount.reducer,
-  },
+  }
 });
